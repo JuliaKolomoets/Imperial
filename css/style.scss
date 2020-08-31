@@ -1,0 +1,749 @@
+@import url('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+@import "../fontawesome-free-5.0.8/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis.bold.eot');
+  src: local('☺'), url('../fonts/metropolis.bold.woff') format('woff'), url('../fonts/metropolis.bold.ttf') format('truetype'), url('../fonts/metropolis.bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis.extra-bold.eot');
+  src: local('☺'), url('../fonts/metropolis.extra-bold.woff') format('woff'), url('../fonts/metropolis.extra-bold.ttf') format('truetype'), url('../fonts/metropolis.extra-bold.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis.light.eot');
+  src: local('☺'), url('../fonts/metropolis.light.woff') format('woff'), url('../fonts/metropolis.light.ttf') format('truetype'), url('../fonts/metropolis.light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis.regular.eot');
+  src: local('☺'), url('../fonts/metropolis.regular.woff') format('woff'), url('../fonts/metropolis.regular.ttf') format('truetype'), url('../fonts/metropolis.regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Metropolis';
+  overflow-x: hidden;
+}
+
+div, form, input, h1, h2, h3, h4, p, nav, span, li, a, img, footer, section, header {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title_section {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  span {
+    color: #aeaeae;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 50px;
+
+  &:hover {
+    box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 1);
+  }
+}
+
+.header_section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header_navigation {
+    ul {
+      li {
+        display: inline-block;
+
+        a {
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: black;
+
+          span {
+            visibility: hidden;
+          }
+
+          &:hover {
+            color: #0b7efe;
+            transition: 0.3s;
+
+            span {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header_link {
+    background-color: #0b7efe;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 30px 40px;
+  }
+}
+
+.section_brands {
+  background-image: url(../img/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 130px 15px 220px 15px;
+
+  h3 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 200px;
+  }
+
+  .main_btn {
+    padding: 15px 80px;
+  }
+}
+
+.wrapper_profits_business {
+  position: relative;
+  padding: 100px 15px;
+  background-color: #fcfcfd;
+
+  .wrapper_profits_info {
+    max-width: 600px;
+
+    h2 {
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 60px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .btn_profits {
+      margin-right: 100px;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: #aeaeae;
+      padding: 12px 25px;
+
+      &:hover {
+        color: black;
+        border: 2px solid #0b7efe;
+        padding: 12px 25px;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .wrapper_profits_img {
+    position: absolute;
+    max-width: 700px;
+    right: 0;
+    top: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.wrapper_services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 0;
+
+  .column_service {
+    max-width: 550px;
+
+    .services_info {
+      max-width: 400px;
+
+      p {
+        font-size: 14px;
+        margin-bottom: 100px;
+      }
+    }
+
+    .service_block {
+      margin-bottom: 20px;
+
+      .block_number {
+        font-size: 16px;
+        color: #bfbfbf;
+        margin-bottom: 20px;
+      }
+
+      .service_block_img {
+        max-width: 550px;
+        position: relative;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 0;
+      z-index: 2;
+      background-color: #fff;
+      padding: 25px 50px;
+
+    }
+
+    .service_block_btn {
+      position: absolute;
+      right: -30px;
+      text-transform: uppercase;
+      color: black;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .explore_btn {
+      text-align: center;
+
+      .btn {
+        color: black;
+        border-color: #0b7efe;
+        padding: 20px 100px;
+        margin-top: 100px;
+        display: inline-block;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.our_portfolio {
+  background-color: #0b7efe;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 90px 15px;
+
+    h3 {
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .btn {
+      padding: 20px 100px;
+    }
+  }
+
+  .our_projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .project_block {
+      position: relative;
+      width: 33.333%;
+
+      &:hover:after {
+        content: "\f067";
+        display: inline-block;
+        position: absolute;
+        left: 49%;
+        top: 38%;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: white;
+        font-size: 20px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .title_project {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        color: white;
+      }
+    }
+  }
+}
+
+.our_blog {
+  .container_our_blog {
+    padding: 110px 15px;
+    position: relative;
+
+    h3 {
+      margin-bottom: 80px;
+    }
+
+    .wrapper_musing_blog {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .musing_blog {
+        max-width: 370px;
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .info_musing_blog {
+          position: absolute;
+          left: 5px;
+          bottom: 5px;
+
+          p {
+            color: white;
+
+            &:first-of-type {
+              text-transform: uppercase;
+              font-size: 13px;
+              font-weight: 700;
+            }
+
+            &:last-of-type {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .owl-carousel .owl-nav.disabled {
+    display: inline-block;
+  }
+
+  .owl-nav .owl-prev:before {
+    content: "\f053";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 80%;
+    top: 16%;
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 6;
+    background-color: #eff2f6;
+    border-radius: 100%;
+    padding: 18px 20px;
+  }
+
+  .owl-nav .owl-next:after {
+    content: "\f054";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: 11%;
+    top: 16%;
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 6;
+    background-color: #eff2f6;
+    border-radius: 100%;
+    padding: 18px 20px;
+  }
+}
+
+.video_section {
+  position: relative;
+  &:after {
+    content: "\f04b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    color: white;
+    background-color: #0b7efe;
+    font-size: 40px;
+    padding: 50px;
+    border-radius: 100%;
+    margin-left: -70px;
+    margin-top: -80px;
+    cursor: pointer;
+    box-shadow: 0px 0px 24px 2px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 0px 24px 2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 24px 2px rgba(255, 255, 255, 1);
+  }
+
+  img {
+    width: 100%;
+  }
+    .video_section_title {
+      position: absolute;
+      left: 10%;
+      top: 10px;
+
+      h2 {
+        font-size: 45px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+.our_clients {
+  .title_section {
+    margin: 100px 0;
+  }
+
+  .logo_our_clients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .block_join {
+    background-image: url(../img/clbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+    position: relative;
+    top: 100px;
+
+    .block_project {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 800;
+      text-align: center;
+      max-width: 400px;
+
+      p {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 34px;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.footer_section {
+  background-color: black;
+  color: #808080;
+  padding: 150px 0;
+
+  .first_line_footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+
+    .social {
+      a {
+        display: inline-block;
+        font-size: 23px;
+        color: #808080;
+        margin-right: 30px;
+      }
+    }
+
+    form {
+      position: relative;
+
+      label {
+        font-size: 15px;
+      }
+
+      input {
+        display: block;
+        margin-top: 15px;
+        min-width: 330px;
+        line-height: 35px;
+        padding-left: 16px;
+        background-color: #1c1c1c;
+        border: none;
+
+      }
+
+      i {
+        position: absolute;
+        right: 0;
+        top: 31px;
+        font-size: 12px;
+        background-color: #393939;
+        padding: 12px 14px;
+        color: #0b7efe;
+      }
+    }
+  }
+
+  .second_line {
+    text-align: center;
+    nav {
+      ul {
+        li {
+          display: inline-block;
+          a {
+            font-size: 13px;
+            color: #808080;
+            margin: 0 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+$mobile-breakpoint: 1238px;
+/* The Mobile Menu that appears on click */
+
+.mobile-menu {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+  min-height: 100%;
+  height: 100%;
+  background: grey;
+  margin: 0;
+  position: fixed;
+  opacity: 0;
+  transition: 0.5s;
+
+  /* The desktop menu styles */
+  @media (min-width: $mobile-breakpoint) {
+    float: right;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    min-height: auto;
+    height: auto;
+    padding: 0;
+    width: auto;
+    background: transparent;
+    display: block;
+    opacity: 1;
+
+  }
+
+  /* When button is clicked, open class is added to menu to show it */
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.lock-scroll .mobile-menu {
+  z-index: 0;
+}
+
+
+/* Main Navigation in header for desktop */
+
+.main-menu {
+  //margin: 100px 0;
+  padding: 0;
+
+  @media (min-width: $mobile-breakpoint) {
+    //width: 600px;
+    //margin: 0 auto;
+  }
+
+  &__item {
+    padding: 0;
+    display: block;
+    position: relative;
+
+    @media (min-width: $mobile-breakpoint) {
+      float: left;
+      display: block;
+    }
+  }
+
+  &__link {
+    border-bottom: 0;
+    color: white;
+    font: bold 15px/15px Arial;
+    display: block;
+    padding: 20px;
+    position: relative;
+
+    @media (min-width: $mobile-breakpoint) {
+      float: left;
+      color: black;
+    }
+  }
+}
+
+/* Hamburger Button - Animation courtesy of https://codepen.io/designcouch/pen/Atyop - more examples in this link */
+
+.open-button {
+  width: 30px;
+  height: 30px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  position: absolute;
+  cursor: pointer;
+  border-bottom: 0;
+  top: 25px;
+  right: 20px;
+  z-index: 9999;
+  border-bottom: 0;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: none;
+  }
+
+  &:hover {
+    border-bottom: 0;
+  }
+}
+
+.open-button span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.open-button.open span {
+  background: white;
+}
+
+.open-button span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.open-button span:nth-child(2) {
+  top: 10px;
+  transform-origin: left center;
+}
+
+.open-button span:nth-child(3) {
+  top: 20px;
+  transform-origin: left center;
+}
+
+.open-button.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+.open-button.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.open-button.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 19px;
+  left: 8px;
+}
+
+/* Scroll lock style for body */
+.lock-scroll {
+  overflow: hidden;
+}
+
+//@media only screen and (max-width: 768px) {
+//  .header_information {
+//    .header_navigation {
+//      padding-top: 100px;
+//
+//      ul {
+//        li {
+//          display: block;
+//          text-align: center;
+//          margin-left: 0;
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+
